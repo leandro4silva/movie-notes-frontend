@@ -27,7 +27,7 @@ export function Header({handleSearch}) {
 
     return (
         <Container>
-            <Logo to="/">RocketMovies</Logo>
+            <Logo to="/">MovieNotes</Logo>
             <Input 
                 type="text" 
                 placeholder="Pesquisar pelo titulo"
