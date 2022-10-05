@@ -13,12 +13,17 @@ export const Header = styled.div`
 
     display: flex;
     align-items: center;
-    padding: 0 12.4rem;
+    padding: 0 2.2rem;
+
+
+    @media (min-width: 1024px) {
+        padding: 0 12.4rem;   
+    }
 `
 
 export const Form = styled.form`
     max-width: 34rem;
-    margin: -8.4rem auto;
+    margin: 2rem auto;
     
     
     .name-email{
@@ -38,6 +43,11 @@ export const Form = styled.form`
     .error{
         color: red;
         font-size: 1.5rem;
+    }
+
+
+    @media (min-width: 1024px) {
+        margin: -8.4rem auto;
     }
 `
 export const Avatar = styled.div`

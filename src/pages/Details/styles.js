@@ -13,7 +13,7 @@ export const Container = styled.div`
 `
 export const Content = styled.div`
     grid-area: content;
-    padding-inline: 12.3rem;
+    padding-inline: 2.2rem;
     overflow-y: auto;
 
     header{
@@ -69,6 +69,10 @@ export const Content = styled.div`
         line-height: 2.1rem;
         color: ${({theme}) => theme.COLORS.GRAY_200};
         text-align: justify;
+    }
+
+    @media (min-width: 1024px) {
+        padding-inline: 12.3rem; 
     }
 
 `

@@ -12,6 +12,9 @@ export default createGlobalStyle`
         font-size: 62.5%;
     }
 
+    ul {
+        list-style: none;
+    }
 
     body{
         font-size: 1.6rem;

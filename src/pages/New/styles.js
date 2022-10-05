@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     grid-area: content;
-    padding-inline: 12.3rem;
+    padding-inline: 2.2rem;
     overflow-y: auto;
     padding-bottom: 8.5rem;
 
@@ -28,6 +28,11 @@ export const Content = styled.div`
         font-weight: 500;
         color: ${({theme}) => theme.COLORS.GRAY_200};
         margin-top: 2.4rem;
+    }
+
+
+    @media (min-width: 1024px) {
+        padding-inline: 12.3rem;
     }
 `
 
@@ -45,7 +50,7 @@ export const Form = styled.form`
     > .input-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 4rem;
+        column-gap: 2rem;
     }
 
     > .textarea-wrapper{
@@ -63,7 +68,7 @@ export const Form = styled.form`
 
         > .handle-tags{
             display: flex;
-            align-items: center;
+            flex-direction: column;
             flex-wrap: wrap;
             gap: 2.4rem;
             width: 100%;
@@ -79,5 +84,17 @@ export const Form = styled.form`
         display: flex;
         align-items: center;
         gap: 4rem;
+    }
+
+    @media (min-width: 1024px) {
+        >.input-wrapper{
+            column-gap: 4rem;
+        } 
+
+        >.input-tags{
+            > .handle-tags{       
+                flex-direction: row;
+            }
+        }
     }
 `

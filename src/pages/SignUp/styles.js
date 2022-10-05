@@ -5,8 +5,14 @@ import backgroundImg from '../../assets/image/background-signIn.png'
 export const Container = styled.div`
     height: 100vh;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1.5fr 2.3fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1.5fr 2.3fr;
+    }
 `
 
 export const Form = styled.form`
@@ -14,13 +20,13 @@ export const Form = styled.form`
     justify-content: center;
     
     flex-direction: column;
-    padding-inline: 13.6rem;
-    padding-block: 2.4rem;
+    
+    padding-inline: 2.2rem;
     text-align: left;
     
     > h2{
         text-align: left;
-        margin-block: 2.8rem;
+        margin-block: 1.8rem;
     }
     
     > a{
@@ -61,11 +67,23 @@ export const Form = styled.form`
         margin-top: 4.8rem;
     }
 
+    @media (min-width: 1024px) {
+        padding-inline: 13.6rem;
+        padding-block: 2.4rem;
 
+        >h2{
+            margin-block: 2.8rem;
+        }
+    }
     
     `
 export const Content = styled.div`
-    flex: 1;
-    background: url(${backgroundImg}) no-repeat center center;
-    background-size: cover;
+    display: none;
+
+    @media (min-width: 1024px) {
+        display: flex;
+        flex: 1;
+        background: url(${backgroundImg}) no-repeat center center;
+        background-size: cover;
+    }
 `
